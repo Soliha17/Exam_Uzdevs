@@ -1,0 +1,45 @@
+.error-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 121px;
+
+  color: #cfd7e7;
+}
+.son {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 121px;
+  text-align: center;
+  background: linear-gradient(267.43deg, #6762f1 39.92%, #7bd1ea 60.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.error-container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .error-text{
+    font-size: 90px;
+  }
+  .son{
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .error-text{
+    font-size: 70px;
+  }
+  .son{
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,118 @@
+.form {
+  padding-top: 30px;
+  padding-left: 142px;
+}
+.form p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #0f2756;
+  margin-bottom: 60px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #0f2756;
+}
+.form-container input {
+  width: 440px;
+  height: 52px;
+  background: #ffffff;
+  border: 1px solid #4a84fa;
+  border-radius: 5px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  outline: none;
+  padding: 10px 20px;
+}
+.form-container {
+  /* display: flex; */
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 56px;
+}
+
+.form-button {
+  cursor: pointer;
+  margin-top: 40px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 16px;
+  width: 306px;
+  height: 72px;
+  background: linear-gradient(90deg, #ff842b 0%, #fe6915 100%);
+  border-radius: 65px;
+}
+.form-agree label {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0f2756;
+}
+@media only screen and (max-width: 1275px) {
+  .form-container {
+    width: 100%;
+  }
+  .form {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .form-container input {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .form-container input {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .form-container input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form {
+    padding-left: 20px;
+  }
+  .form-container input {
+    width: 410px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .form-container input {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .form-container input {
+    width: 300px;
+  }
+  .form-button {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form-page.css" />
+    <link rel="stylesheet" href="error-page.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <a href="/"><img src="./images/Logo_1 desk.png" alt="logo" /></a>
+      </div>
+      <nav>
+        <ul class="font">
+          <li><a href="/home">Рассылки</a></li>
+          <li><a href="/products">Лидогенерация</a></li>
+          <li><a href="/about">Монетизация трафика</a></li>
+          <li><a href="/about">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-btn-group">
+        <button class="header-btn-first font" type="button">
+          <img src="./icons/header_dollar_sign.svg" alt="dollar_icon" />
+          Узнать тарифы
+        </button>
+        <button class="header-btn-second font" type="button">
+          Войти
+          <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
+        </button>
+      </div>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1 select"></div>
+        <div class="bar3 select"></div>
+        <div class="mobile-menu hidden">
+          <ul class="mobile-menu-list font">
+            <li><a href="/home">Рассылки</a></li>
+            <li><a href="/products">Лидогенерация</a></li>
+            <li><a href="/about">Монетизация трафика</a></li>
+            <li><a href="/about">Контакты</a></li>
+          </ul>
+          <div class="header-btn-group">
+            <button class="header-btn-first" type="button">
+              <img src="./icons/header_dollar_sign.svg" alt="dollor_icon" />
+              Узнать тарифы
+            </button>
+            <button class="header-btn-second" type="button">
+              Войти
+              <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="error-container">
+      <div>
+        <span class="error-text">ERROR</span> <span class="son">404</span>
+      </div>
+      <button class="form-button">Вернуться на главную</button>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="logo-row">
+          <img src="./images/Logo_1 desk.png" alt="" />
+          <img src="./images/Logo_2.png" alt="" />
+          <img src="./images/Logo_3.png" alt="" />
+        </div>
+        <div class="footer-info">
+          <div class="footer-left">
+            <p>Политика обработки персональных данных</p>
+            <p>Партнерское соглашение</p>
+            <p>© 2022. ИП Мичурина Т. Ю. Все права на сайт защищены</p>
+          </div>
+          <div class="footer-right">
+            <img src="./images/Frame 54.png" alt="" />
+            <span
+              >ИП Мичурина Т. Ю. является оператором <br />
+              персональных данных (приказ № 237 от 21.12.2020)
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
