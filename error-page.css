@@ -7,6 +7,9 @@
 
   color: #cfd7e7;
 }
+a{
+  text-decoration: none;
+}
 .son {
   font-family: "Inter";
   font-style: normal;

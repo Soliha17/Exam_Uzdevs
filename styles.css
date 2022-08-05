@@ -1,5 +1,12 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
-
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Light.ttf), url(./fonts/Inter-Medium.ttf),
+    url(./fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url(./fonts/NotoSans-Medium.ttf), url(./fonts/NotoSans-Regular.ttf);
+}
 *,
 *::before,
 *::after {
@@ -10,6 +17,7 @@
 
 body {
   color: #fff;
+  min-width: 300px;
 }
 header {
   margin-bottom: 20px;
@@ -19,7 +27,16 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  z-index: 9999;
+  transition: 0.3s linear;
+}
+.sticky {
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  width: 100%;
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
 }
 header a {
   text-decoration: none;
@@ -27,7 +44,7 @@ header a {
 
 header .brand {
   padding-left: 20px;
-  padding-right: 230px;
+  padding-right: 40px;
 }
 header .brand img {
   width: 100%;
@@ -40,6 +57,7 @@ header ul {
   height: 100%;
   display: flex;
   align-content: center;
+  /* transition: 0.3s; */
 }
 header ul li:not(:last-child) {
   margin-right: 44px;
@@ -48,10 +66,6 @@ header ul li:last-child {
   margin-right: 48px;
 }
 
-header ul li a:hover {
-  color: aqua;
-  transition: 0.3s;
-}
 .font li a {
   font-family: "Noto Sans";
   font-style: normal;
@@ -60,6 +74,11 @@ header ul li a:hover {
   line-height: 140%;
   text-align: center;
   color: #0f2756;
+  transition: 0.5s all;
+}
+.font li a:hover {
+  color: #fb6b1a;
+  font-weight: bold;
 }
 .font {
   font-family: "Noto Sans";
@@ -91,6 +110,14 @@ header ul li a:hover {
   border-radius: 65px;
   background-color: #fff;
   cursor: pointer;
+  transition: 0.3s linear;
+}
+.header-btn-first:hover {
+  background: #0f2756;
+  color: #ffffff;
+}
+.header-btn-first:hover img {
+  background: #fff;
 }
 .header-btn-second {
   display: flex;
@@ -108,6 +135,11 @@ header ul li a:hover {
   font-weight: 600;
   cursor: pointer;
   color: #fff;
+  transition: 0.3s linear;
+}
+.header-btn-second:hover {
+  background: #0f2756;
+  color: #ffffff;
 }
 #hamburger-icon {
   margin: auto 0;
@@ -275,7 +307,7 @@ header ul li a:hover {
 }
 @media only screen and (max-width: 375px) {
   header .header-btn-first {
-    display: none;
+    display: none !important;
   }
 }
 .container {
@@ -293,6 +325,18 @@ header ul li a:hover {
   margin-left: 138px;
   margin-right: 110px;
 }
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.main-animation img {
+  animation: zoominoutsinglefeatured 1s infinite;
+}
+
 .main-right-content {
   width: 400px;
   height: auto;
@@ -327,6 +371,7 @@ header ul li a:hover {
   align-items: center;
   padding: 20px 40px;
   gap: 16px;
+  width: 196px;
   background: linear-gradient(90deg, #ff842b 0%, #fe6915 100%);
   border-radius: 65px;
   border-width: 0;
@@ -337,6 +382,19 @@ header ul li a:hover {
   line-height: 140%;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.003s linear;
+}
+.main-primary-button:hover {
+  width: 220px;
+  padding: 10px 0;
+  background: linear-gradient(90deg, #ff9d0a 0%, #ff792d 100%);
+}
+.main-primary-button img {
+  width: 50px;
+  display: none;
+}
+.main-primary-button:hover img {
+  display: block;
 }
 @media only screen and (max-width: 1230px) {
   .container {
@@ -392,7 +450,7 @@ header ul li a:hover {
   height: 354px;
   margin: 30px auto;
   background: linear-gradient(91.26deg, #f9fbff 0%, #f4f8ff 100%);
-  background-color: #d3d8e0;
+  background: rgba(15, 39, 86, 0.03);
   background-position: 100% 100%;
   border-radius: 15px;
   background-image: url("./icons/graphics_icons_blue.svg");
@@ -457,7 +515,7 @@ header ul li a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 20px 32px;
+  /* padding: 20px 20px 20px 32px; */
   gap: 12px;
   border: 1px solid #b2bed2;
   background: transparent;
@@ -471,6 +529,14 @@ header ul li a:hover {
   line-height: 140%;
   color: #0f2756;
   cursor: pointer;
+}
+.aside-footer-button:hover {
+  /* width: 250px; */
+  padding: 0 10px;
+  justify-content: space-between;
+}
+.aside-footer-button:hover img {
+  width: 40px;
 }
 @media only screen and (max-width: 1100px) {
   .aside {
@@ -590,10 +656,10 @@ header ul li a:hover {
 }
 .you-will-receive-left .row .icon-with-text span {
   margin-left: 24px;
-  color: #0F2756;
+  color: #0f2756;
 }
 .you-will-receive-left .row p {
-  color: #484E65;
+  color: #484e65;
   width: 450px;
 }
 @media only screen and (max-width: 1170px) {
@@ -789,6 +855,30 @@ header ul li a:hover {
   background: linear-gradient(90deg, #ff842b 0%, #fe6915 100%);
   border-radius: 30px;
 }
+.aside-orange-container:hover {
+  background: #fff;
+  border: 1px solid #fb6b1a;
+}
+.aside-orange-container:hover .orange-button {
+  background: linear-gradient(90deg, #ff9d0a 0%, #ff792d 100%);
+  color: #ffffff;
+}
+.aside-orange-container:hover .orange-text-two {
+  border-color: #fb6b1a;
+  color: #fe6915;
+}
+.aside-orange-container:hover .orange-text-one {
+  color: #fe6915;
+}
+.orange-button img {
+  display: none;
+}
+.orange-button:hover {
+  justify-content: space-evenly;
+}
+.orange-button:hover img {
+  display: block;
+}
 .orange-text-one {
   margin: 34px 40px;
   width: 300px;
@@ -834,6 +924,9 @@ header ul li a:hover {
   line-height: 140%;
   color: #fb6b1a;
   cursor: pointer;
+}
+.orange-button:hover {
+  background: linear-gradient(90deg, #ff9d0a 0%, #ff792d 100%);
 }
 @media only screen and (max-width: 1110px) {
   .orange-text-two {
@@ -1025,7 +1118,7 @@ header ul li a:hover {
   }
 }
 .oplata {
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .oplata-container {
   display: flex;
@@ -1238,6 +1331,14 @@ header ul li a:hover {
   border-radius: 30px;
   background-repeat: no-repeat;
 }
+.zayavka-container:hover {
+  background-color: #fff;
+  border: 1px solid #fb6b1a;
+}
+.zayavka-container:hover .orange-button {
+  background: linear-gradient(90deg, #ff9d0a 0%, #ff792d 100%);
+  color: #fff;
+}
 @media only screen and (max-width: 1010px) {
   .zayavka-container {
     padding-left: 20px;
@@ -1289,6 +1390,10 @@ header ul li a:hover {
   font-size: 28px;
   line-height: 140%;
   color: #484e65;
+  transition: 0.3=2s linear;
+}
+.contact-container span:hover {
+  color: #8b8e97;
 }
 .contact-container p {
   font-family: "Inter";
@@ -1400,6 +1505,10 @@ header ul li a:hover {
   font-size: 20px;
   line-height: 150%;
   color: #fb6b1a;
+  transition: 0.3s linear;
+}
+.emails-container .email-box span:hover {
+  text-decoration: underline;
 }
 .img-box {
   display: flex !important;

@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Navigation bar</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="brand">
-        <a href="./error-page.html"><img src="./images/Logo_1 desk.png" alt="logo" /></a>
+        <a href="index.html"><img src="./images/Logo_1 desk.png" alt="logo" /></a>
       </div>
       <nav>
         <ul class="font">
-          <li><a href="/home">Рассылки</a></li>
-          <li><a href="/products">Лидогенерация</a></li>
-          <li><a href="/about">Монетизация трафика</a></li>
-          <li><a href="/">Контакты</a></li>
+          <li><a href="#rassilki">Рассылки</a></li>
+          <li><a href="#lidogeneratsiya">Лидогенерация</a></li>
+          <li><a href="#monetizatsiya">Монетизация трафика</a></li>
+          <li><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
       <div class="header-btn-group">
         <a class="header-btn-first font" href="./form-page.html" >
-          <img src="./icons/header_dollar_sign.svg" alt="dollar_icon" />
+          <img src="./icons/header-btn-1-svg.svg" alt="dollar_icon" />
           Узнать тарифы
         </a>
         <a class="header-btn-second font" href="./error-page.html" >
@@ -35,10 +36,10 @@
         <div class="bar3 select"></div>
         <div class="mobile-menu hidden">
           <ul class="mobile-menu-list font">
-            <li><a href="/home">Рассылки</a></li>
-            <li><a href="/products">Лидогенерация</a></li>
-            <li><a href="/about">Монетизация трафика</a></li>
-            <li><a href="/about">Контакты</a></li>
+            <li><a href="#rassilki">Рассылки</a></li>
+            <li><a href="#lidogeneratsiya">Лидогенерация</a></li>
+            <li><a href="#monetizatsiya">Монетизация трафика</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
           <div class="header-btn-group">
             <button class="header-btn-first" type="button">
@@ -55,7 +56,9 @@
     </header>
     <section class="main-section">
       <div class="container">
-        <img src="./icons/ГЛАВНАЯ иллюстрация.svg" class="main-illustration-image" alt="main-image" />
+        <div class="main-animation">
+          <img src="./icons/ГЛАВНАЯ иллюстрация.svg" class="main-illustration-image" alt="main-image" />
+        </div>
         <div class="main-right-content">
           <p class="main-first-p">Ваш способ связи <br> с клиентами</p>
           <div class="main-social-icons">
@@ -66,7 +69,10 @@
             <a href=""></a><img src="./icons/ivr.svg" alt="ivr-icon" /></a>
           </div>
           <p class="main-last-p">Cпециализируемся на займовом трафике.</p>
-          <button class="main-primary-button" type="button">Подключиться</button>
+          <a class="main-primary-button">
+            Подключиться
+            <img src="./icons/podklyut-hover.svg" alt="">
+            </a>
         </div>
       </div>
     </section>
@@ -132,12 +138,12 @@
               <img src="./icons/Button. Next.svg" alt="">
             </button>
         </div>
-        <div class="will-receive-right">
+        <div class="will-receive-right" data-aos="flip-down">
           <img src="./icons/sms_comp_numb_illyustration.svg" alt="">
         </div>
       </div>
     </section>
-    <section class="rapidly-chat">
+    <section class="rapidly-chat" id="rassilki">
       <p class="chat-info">Используйте <span class="orange-info">все возможности</span> быстрой<br> коммуникации с пользователями:</p>
       <div class="chat-container">
         <div class="chat-row-first">
@@ -165,7 +171,8 @@
         <p class="orange-text-one">Выгодная, удобная и стабильная схема отправки смс-сообщений уже настроена.</p>
         <p class="orange-text-two">Благодаря нашему опыту вы подключаетесь к каналам с самым лучшим соотношением доставляемости и цены за смс</p>
 
-        <button class="orange-button">Подключиться</button> 
+        <a class="orange-button" >Подключиться
+        </a> 
       </div>
     </section>
     <section class="social-media">
@@ -186,7 +193,7 @@
               <img src="./icons/Button. Next.svg" alt="">
             </button>
         </div>
-        <div class="media-right">
+        <div class="media-right" data-aos="zoom-in-up">
           <img src="./images/ВАТСАП иллюстрация.png" alt="watsup">
         </div>
       </div>
@@ -207,7 +214,7 @@
               <img src="./icons/Button. Next.svg" alt="">
             </button>
         </div>
-        <div class="media-right">
+        <div class="media-right" data-aos="zoom-in"data-aos-duration="1000">
           <img src="./images/ВАЙБЕР иллюстрация.png" alt="watsup">
         </div>
       </div>
@@ -228,14 +235,14 @@
               <img src="./icons/Button. Next.svg" alt="">
             </button>
         </div>
-        <div class="media-right">
+        <div class="media-right" data-aos="zoom-in-up" data-aos-duration="1000">
           <img src="./images/IVR иллюстрация.png" alt="watsup">
         </div>
       </div>
     </section>
-    <section class="oplata margin-52">
+    <section class="oplata margin-52" id="lidogeneratsiya">
       <div class="oplata-container">
-        <div class="oplata-left">
+        <div class="oplata-left main-animation">
           <img src="./images/ЛИДОГЕНЕРАЦИЯ иллюстрация.png" alt="oplata">
         </div>
         <div class="oplata-right">
@@ -256,7 +263,7 @@
             <span>Вы получаете клиентов</span>
             
             </div>
-            <div class="oplata-right-right">
+            <div class="oplata-right-right" data-aos="zoom-in" data-aos-duration="1000">
             <img src="./images/oplata.png" alt="gfyh">
             </div>
           </div>
@@ -267,7 +274,7 @@
       </div>
     </section>
     <section class="magnit">
-      <div class="magnit-container">
+      <div class="magnit-container" id="monetizatsiya">
         <div class="magnit-info">
           <p>Монетизация трафика</p>
           <div class="magnit-info-with-castle">
@@ -280,7 +287,7 @@
               <img src="./icons/Button. Next.svg" alt="">
             </button>
         </div>
-        <div class="magnit-img">
+        <div class="magnit-img main-animation">
           <img src="./images/МОНЕТИЗАЦИЯ иллюстрация.png" alt="illus ">
         </div>
       </div>
@@ -288,11 +295,11 @@
     <section class="zayavka">
       <p class="zayavka-info">Для подключения к системе <br> оставьте заявку:</p>
       <div class="zayavka-container">
-        <button class="orange-button">Подключиться</button> 
-
+        <a class="orange-button" id="orange-btn">Подключиться
+        </a> 
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <p class="contact-p">Контакты</p>
       <div class="contact-container">
         <div class="user-first">
@@ -357,6 +364,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <script src="script.js"></script>
+
   </body>
 </html>
