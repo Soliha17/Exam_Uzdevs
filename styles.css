@@ -7,6 +7,7 @@
   font-family: "Noto Sans";
   src: url(./fonts/NotoSans-Medium.ttf), url(./fonts/NotoSans-Regular.ttf);
 }
+
 *,
 *::before,
 *::after {
@@ -14,10 +15,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #fff;
   min-width: 300px;
+}
+.wrapper {
+  z-index: 9999;
 }
 header {
   margin-bottom: 20px;
@@ -28,7 +34,6 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  z-index: 9999;
   transition: 0.3s linear;
 }
 .sticky {
@@ -40,6 +45,30 @@ header {
   /* width: 100%; */
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.07);
   background-color: #fff;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ff792d;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  width: 45px;
+  height: 45px;
+}
+#backToTop img {
+  width: 100%;
+  height: 100%;
+}
+#backToTop:hover {
+  background-color: #b2bed2;
 }
 header a {
   text-decoration: none;
@@ -172,7 +201,6 @@ header ul li:last-child {
   align-items: flex-start;
   justify-content: space-around;
   width: 100% !important;
-  height: 100% !important;
   z-index: 999;
   background-color: #fff;
   overflow-y: hidden !important;
@@ -524,11 +552,11 @@ header ul li:last-child {
   line-height: 140%;
   color: #0f2756;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .aside-footer-button:hover img {
-  margin-left: 10px;
+  transform: translateX(5px);
 }
 @media only screen and (max-width: 1100px) {
   .aside {
@@ -833,7 +861,7 @@ header ul li:last-child {
     margin-top: 40px;
   }
 }
-/* 
+/*
 .hidden {
   display: none;
 } */
@@ -1120,7 +1148,6 @@ header ul li:last-child {
 .oplata-container {
   display: flex;
   justify-content: space-between;
-
 }
 .oplata-left img {
   width: 100%;
@@ -1210,10 +1237,10 @@ header ul li:last-child {
   .oplata-left {
     margin-top: 40px;
   }
-  .oplata-right p{
+  .oplata-right p {
     text-align: center;
   }
-  .oplata-right button{
+  .oplata-right button {
     margin: 0 auto;
   }
   .oplata-right-right img {
@@ -1551,13 +1578,13 @@ header ul li:last-child {
     margin-bottom: 20px;
   }
 }
-footer {
+.footer {
   margin-top: 160px;
   padding-bottom: 50px;
+  width: 100%;
+  background: #fbfbfb;
 }
 .footer-container {
-  background: #fbfbfb;
-  /* width: 100%; */
   max-width: 1400px;
   padding-left: 138px;
   padding-right: 256px;
@@ -1632,23 +1659,23 @@ footer {
     padding-left: 20px;
   }
 }
-header{
+header {
   max-width: 1400px !important;
   margin: 0 auto;
 }
-section{
+section {
   max-width: 1400px !important;
   margin: 0 auto;
 }
-footer{
+.footer-container {
   max-width: 1400px !important;
   margin: 0 auto;
 }
-#lidogeneratsiya{
+#lidogeneratsiya {
   max-width: 1400px !important;
   margin: 0 auto;
 }
-.margin-52{
+.margin-52 {
   max-width: 1400px !important;
   margin: 0 auto;
 }

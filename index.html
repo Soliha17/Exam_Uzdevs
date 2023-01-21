@@ -5,90 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Navigation bar</title>
   </head>
   <body>
-    <header id="header">
-      <div class="brand">
-        <a href="index.html"><img src="./images/Logo_1 desk.png" alt="logo" /></a>
-      </div>
-      <nav>
-        <ul class="font">
-          <li><a href="#rassilki">Рассылки</a></li>
-          <li><a href="#lidogeneratsiya">Лидогенерация</a></li>
-          <li><a href="#monetizatsiya">Монетизация трафика</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header-btn-group">
-        <a class="header-btn-first font" href="./form-page.html" >
-          <img src="./icons/header-btn-1-svg.svg" alt="dollar_icon" />
-          Узнать тарифы
-        </a>
-        <a class="header-btn-second font" href="./error-page.html" >
-          Войти
-          <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
-        </a>
-      </div>
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1 select"></div>
-        <div class="bar3 select"></div>
-        <div class="mobile-menu hidden">
-          <ul class="mobile-menu-list font">
+    <!-- BACK TO TOP BUTTON -->
+    <button onclick="topFunction()" id="backToTop" title="Go to top">
+    <img src="./images/arrowhead-up.png" alt="top">
+    </button>
+    <div class="wrapper">
+      <header id="header">
+        <div class="brand">
+          <a href="index.html"
+            ><img src="./images/Logo_1 desk.png" alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul class="font">
             <li><a href="#rassilki">Рассылки</a></li>
             <li><a href="#lidogeneratsiya">Лидогенерация</a></li>
             <li><a href="#monetizatsiya">Монетизация трафика</a></li>
             <li><a href="#contact">Контакты</a></li>
           </ul>
-          <div class="header-btn-group">
-            <button class="header-btn-first" type="button">
-              <img src="./icons/header_dollar_sign.svg" alt="dollor_icon" />
-              Узнать тарифы
-            </button>
-            <button class="header-btn-second" type="button">
-              Войти
-              <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
-            </button>
+        </nav>
+        <div class="header-btn-group">
+          <a class="header-btn-first font" href="./form-page.html">
+            <img src="./icons/header-btn-1-svg.svg" alt="dollar_icon" />
+            Узнать тарифы
+          </a>
+          <a class="header-btn-second font" href="./error-page.html">
+            Войти
+            <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
+          </a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1 select"></div>
+          <div class="bar3 select"></div>
+          <div class="mobile-menu hidden">
+            <ul class="mobile-menu-list font">
+              <li><a href="#rassilki">Рассылки</a></li>
+              <li><a href="#lidogeneratsiya">Лидогенерация</a></li>
+              <li><a href="#monetizatsiya">Монетизация трафика</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="header-btn-group">
+              <button class="header-btn-first" type="button">
+                <img src="./icons/header_dollar_sign.svg" alt="dollor_icon" />
+                Узнать тарифы
+              </button>
+              <button class="header-btn-second" type="button">
+                Войти
+                <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <section class="main-section">
       <div class="container">
         <div class="main-animation">
-          <img src="./icons/ГЛАВНАЯ иллюстрация.svg" class="main-illustration-image" alt="main-image" />
+          <img
+            src="./icons/ГЛАВНАЯ иллюстрация.svg"
+            class="main-illustration-image"
+            alt="main-image"
+          />
         </div>
         <div class="main-right-content">
-          <p class="main-first-p">Ваш способ связи <br> с клиентами</p>
+          <p class="main-first-p">
+            Ваш способ связи <br />
+            с клиентами
+          </p>
           <div class="main-social-icons">
             <a href=""><img src="./icons/massage.svg" alt="massage-icon" /></a>
-            <a href=""></a><img src="./icons/viber.svg" alt="viber-icon" /></a>
-            <a href=""></a><img src="./icons/watsup.svg" alt="whatsup-icon" /></a>
-            <a href=""></a><img src="./icons/telegram.svg" alt="telegram-icon" /></a>
-            <a href=""></a><img src="./icons/ivr.svg" alt="ivr-icon" /></a>
+            <a href=""><img src="./icons/viber.svg" alt="viber-icon" /></a>
+            <a href=""><img src="./icons/watsup.svg" alt="whatsup-icon" /></a>
+            <a href=""
+              ><img src="./icons/telegram.svg" alt="telegram-icon"
+            /></a>
+            <a href=""><img src="./icons/ivr.svg" alt="ivr-icon" /></a>
           </div>
           <p class="main-last-p">Cпециализируемся на займовом трафике.</p>
-          <a class="main-primary-button">
-            Подключиться
-            </a>
+          <a class="main-primary-button"> Подключиться </a>
         </div>
       </div>
     </section>
     <section>
       <div class="aside">
         <button class="button-up">
-          <img src="./icons/Arrow 6.svg" alt="up_button">
+          <img src="./icons/Arrow 6.svg" alt="up_button" />
         </button>
         <div class="aside-text-group">
-          <p class="aside-first-p">Мы предлагаем инструменты, которые надежно  работают, обладают разнообразным функционалом и просты в обращении. </p>
+          <p class="aside-first-p">
+            Мы предлагаем инструменты, которые надежно работают, обладают
+            разнообразным функционалом и просты в обращении.
+          </p>
           <div class="aside-footer-group">
             <div class="aside-footer-text">
               <p class="our-cost">Наша цель:</p>
-              <p class="aside-footer-last-p">Предоставить сервис качественной и эффективной <br> коммуникации с вашими клиентами.</p>
+              <p class="aside-footer-last-p">
+                Предоставить сервис качественной и эффективной <br />
+                коммуникации с вашими клиентами.
+              </p>
             </div>
-            <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
+            <button class="aside-footer-button">
+              Узнать тарифы
+              <img src="./icons/Button. Next.svg" alt="" />
             </button>
           </div>
         </div>
@@ -100,54 +122,68 @@
         <div class="you-will-receive-left">
           <div class="row">
             <div class="icon-with-text">
-              <img src="./icons/statistics_icon.svg" alt="statistics_icon"/>
+              <img src="./icons/statistics_icon.svg" alt="statistics_icon" />
               <span>Статистика</span>
             </div>
-            <p>Детальная статистика в реальном времени. Для отслеживания данных по вашим цепочкам. </p>
+            <p>
+              Детальная статистика в реальном времени. Для отслеживания данных
+              по вашим цепочкам.
+            </p>
           </div>
           <div class="row">
             <div class="icon-with-text">
-              <img src="./icons/power_icon.svg" alt="power_icon"/>
+              <img src="./icons/power_icon.svg" alt="power_icon" />
               <span>Удобная интеграция</span>
             </div>
             <p>SMPP и API и загрузка файлов.</p>
           </div>
           <div class="row">
             <div class="icon-with-text">
-              <img src="./icons/cost_icon.svg" alt="cost_icon"/>
+              <img src="./icons/cost_icon.svg" alt="cost_icon" />
               <span>Фиксированные цены</span>
             </div>
-            <p>Наше преимущество — фиксированные низкие цены, не зависящие от количества СМС или от суммы пополнения.</p>
+            <p>
+              Наше преимущество — фиксированные низкие цены, не зависящие
+              от количества СМС или от суммы пополнения.
+            </p>
           </div>
           <div class="row">
             <div class="icon-with-text">
-              <img src="./icons/privacy_icon.svg" alt="privacy_icon"/>
+              <img src="./icons/privacy_icon.svg" alt="privacy_icon" />
               <span>Безопасность</span>
             </div>
-            <p>Мы являемся оператором персональных данных. Данные ваших клиентов надёжно защищены.</p>
+            <p>
+              Мы являемся оператором персональных данных. Данные ваших клиентов
+              надёжно защищены.
+            </p>
           </div>
-           <div class="row">
+          <div class="row">
             <div class="icon-with-text">
-              <img src="./icons/statistics_icon.svg" alt="statistics_icon"/>
+              <img src="./icons/statistics_icon.svg" alt="statistics_icon" />
               <span>Нейтральные имена отправителей</span>
             </div>
             <p>Cразу можно начинать рассылку.</p>
           </div>
-          <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
-            </button>
+          <button class="aside-footer-button">
+            Узнать тарифы
+            <img src="./icons/Button. Next.svg" alt="" />
+          </button>
         </div>
         <div class="will-receive-right" data-aos="flip-down">
-          <img src="./icons/sms_comp_numb_illyustration.svg" alt="">
+          <img src="./icons/sms_comp_numb_illyustration.svg" alt="" />
         </div>
       </div>
     </section>
     <section class="rapidly-chat" id="rassilki">
-      <p class="chat-info">Используйте <span class="orange-info">все возможности</span> быстрой<br> коммуникации с пользователями:</p>
+      <p class="chat-info">
+        Используйте
+        <span class="orange-info">все возможности</span> быстрой<br />
+        коммуникации с пользователями:
+      </p>
       <div class="chat-container">
         <div class="chat-row-first">
           <div class="sms-col">
-            <img src="./icons/massage.svg" alt="massage-icon">
+            <img src="./icons/massage.svg" alt="massage-icon" />
             <span>SMS</span>
           </div>
           <p class="name-send">Имя отправителя</p>
@@ -156,119 +192,161 @@
         <div class="chat-row">
           <p class="chat-row-first-p">ABCabc</p>
           <p class="chat-row-second-p">Буквенное</p>
-          <p class="chat-row-third-p">Использование нейтральных имен отправителей с быстрой доставкой до абонентов. Без ожидания регистрации!</p>
+          <p class="chat-row-third-p">
+            Использование нейтральных имен отправителей с быстрой доставкой до
+            абонентов. Без ожидания регистрации!
+          </p>
         </div>
         <div class="chat-row chat-row-last">
           <p class="chat-row-first-p1">DEFghlI</p>
           <p class="chat-row-second-p">Цифровое</p>
-          <p class="chat-row-third-p">Канал для массовых рассылок по низкой цене с уровнем доставки до 90% от активной базы. Отправка осуществляется с цифровых номеров РФ.</p>
+          <p class="chat-row-third-p">
+            Канал для массовых рассылок по низкой цене с уровнем доставки до 90%
+            от активной базы. Отправка осуществляется с цифровых номеров РФ.
+          </p>
         </div>
       </div>
     </section>
     <section class="margin-52">
       <div class="aside-orange-container">
-        <p class="orange-text-one">Выгодная, удобная и стабильная схема отправки смс-сообщений уже настроена.</p>
-        <p class="orange-text-two">Благодаря нашему опыту вы подключаетесь к каналам с самым лучшим соотношением доставляемости и цены за смс</p>
+        <p class="orange-text-one">
+          Выгодная, удобная и стабильная схема отправки смс-сообщений уже
+          настроена.
+        </p>
+        <p class="orange-text-two">
+          Благодаря нашему опыту вы подключаетесь к каналам с самым лучшим
+          соотношением доставляемости и цены за смс
+        </p>
 
-        <a class="orange-button" >Подключиться
-        </a> 
+        <a class="orange-button">Подключиться </a>
       </div>
     </section>
     <section class="social-media">
       <div class="media-container">
         <div class="media-left">
-        <div class="media-left-info">
-          <img src="./icons/watsup.svg" alt="watsup">
-          <p>Whats App </p>
-        </div>
+          <div class="media-left-info">
+            <img src="./icons/watsup.svg" alt="watsup" />
+            <p>Whats App</p>
+          </div>
           <ul>
-            <li>Универсальный канал рассылки через самый используемый в мире мессенджер.</li>
+            <li>
+              Универсальный канал рассылки через самый используемый в мире
+              мессенджер.
+            </li>
             <li>До 1000 символов + фото в сообщении</li>
             <li>Единая цена на весь мир.</li>
             <li>Бесплатный чекниг.</li>
-            <li>WhatsApp с кликабельными кнопками - на сообщение не нужно отвечать, чтобы они кликались! Возможность установить Ваш логотип и имя аккаунта.</li>
+            <li>
+              WhatsApp с кликабельными кнопками - на сообщение не нужно
+              отвечать, чтобы они кликались! Возможность установить Ваш логотип
+              и имя аккаунта.
+            </li>
           </ul>
-          <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
-            </button>
+          <button class="aside-footer-button">
+            Узнать тарифы
+            <img src="./icons/Button. Next.svg" alt="" />
+          </button>
         </div>
         <div class="media-right" data-aos="zoom-in-up">
-          <img src="./images/ВАТСАП иллюстрация.png" alt="watsup">
+          <img src="./images/ВАТСАП иллюстрация.png" alt="watsup" />
         </div>
       </div>
       <div class="media-container media-container-second">
         <div class="media-left">
-        <div class="media-left-info">
-          <img src="./icons/viber.svg" alt="watsup">
-          <p>Viber </p>
-        </div>
+          <div class="media-left-info">
+            <img src="./icons/viber.svg" alt="watsup" />
+            <p>Viber</p>
+          </div>
           <ul>
-            <li>Универсальный канал рассылки через самый используемый в мире мессенджер.</li>
+            <li>
+              Универсальный канал рассылки через самый используемый в мире
+              мессенджер.
+            </li>
             <li>До 1000 символов + фото в сообщении</li>
             <li>Единая цена на весь мир.</li>
             <li>Бесплатный чекниг.</li>
-            <li>WhatsApp с кликабельными кнопками - на сообщение не нужно отвечать, чтобы они кликались! Возможность установить Ваш логотип и имя аккаунта.</li>
+            <li>
+              WhatsApp с кликабельными кнопками - на сообщение не нужно
+              отвечать, чтобы они кликались! Возможность установить Ваш логотип
+              и имя аккаунта.
+            </li>
           </ul>
-          <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
-            </button>
+          <button class="aside-footer-button">
+            Узнать тарифы
+            <img src="./icons/Button. Next.svg" alt="" />
+          </button>
         </div>
-        <div class="media-right" data-aos="zoom-in"data-aos-duration="1000">
-          <img src="./images/ВАЙБЕР иллюстрация.png" alt="watsup">
+        <div class="media-right" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="./images/ВАЙБЕР иллюстрация.png" alt="watsup" />
         </div>
       </div>
       <div class="media-container media-container-third">
         <div class="media-left">
-        <div class="media-left-info">
-          <img src="./icons/ivr.svg" alt="watsup">
-          <p>IVR</p>
-        </div>
+          <div class="media-left-info">
+            <img src="./icons/ivr.svg" alt="watsup" />
+            <p>IVR</p>
+          </div>
           <ul>
-            <li>Универсальный канал рассылки через самый используемый в мире мессенджер.</li>
+            <li>
+              Универсальный канал рассылки через самый используемый в мире
+              мессенджер.
+            </li>
             <li>До 1000 символов + фото в сообщении</li>
             <li>Единая цена на весь мир.</li>
             <li>Бесплатный чекниг.</li>
-            <li>WhatsApp с кликабельными кнопками - на сообщение не нужно отвечать, чтобы они кликались! Возможность установить Ваш логотип и имя аккаунта.</li>
+            <li>
+              WhatsApp с кликабельными кнопками - на сообщение не нужно
+              отвечать, чтобы они кликались! Возможность установить Ваш логотип
+              и имя аккаунта.
+            </li>
           </ul>
-          <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
-            </button>
+          <button class="aside-footer-button">
+            Узнать тарифы
+            <img src="./icons/Button. Next.svg" alt="" />
+          </button>
         </div>
         <div class="media-right" data-aos="zoom-in-up" data-aos-duration="1000">
-          <img src="./images/IVR иллюстрация.png" alt="watsup">
+          <img src="./images/IVR иллюстрация.png" alt="watsup" />
         </div>
       </div>
     </section>
     <section class="oplata margin-52" id="lidogeneratsiya">
       <div class="oplata-container">
         <div class="oplata-left main-animation">
-          <img src="./images/ЛИДОГЕНЕРАЦИЯ иллюстрация.png" alt="oplata">
+          <img src="./images/ЛИДОГЕНЕРАЦИЯ иллюстрация.png" alt="oplata" />
         </div>
         <div class="oplata-right">
           <p>Лидогенерация</p>
           <p>Привлечение новых клиентов в ваш бизнес</p>
           <div class="oplata-right-flex-container">
             <div class="oplata-right-left">
-            <p>Отправка вашей рекламы по нашим <br> клиентам:</p>
-            <img src="./icons/Вы предлагаете креатив.svg" alt="kreativ">
-            <span>Вы предлагаете креатив</span> <br>
-            <img src="./icons/Согласовываем креатив.svg" alt="">
-            <span>Согласовываем креатив</span><br>
-            <img src="./icons/Выбираете размер базы.svg" alt="">
-            <span>Выбираете размер базы</span><br>
-            <img src="./icons/Мы отправляем рассылку.svg" alt="">
-            <span>Мы отправляем рассылку</span><br>
-            <img src="./icons/Вы получаете клиентов.svg" alt="">
-            <span>Вы получаете клиентов</span>
-            
+              <p>
+                Отправка вашей рекламы по нашим <br />
+                клиентам:
+              </p>
+              <img src="./icons/Вы предлагаете креатив.svg" alt="kreativ" />
+              <span>Вы предлагаете креатив</span> <br />
+              <img src="./icons/Согласовываем креатив.svg" alt="" />
+              <span>Согласовываем креатив</span><br />
+              <img src="./icons/Выбираете размер базы.svg" alt="" />
+              <span>Выбираете размер базы</span><br />
+              <img src="./icons/Мы отправляем рассылку.svg" alt="" />
+              <span>Мы отправляем рассылку</span><br />
+              <img src="./icons/Вы получаете клиентов.svg" alt="" />
+              <span>Вы получаете клиентов</span>
             </div>
-            <div class="oplata-right-right" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="./images/oplata.png" alt="gfyh">
+            <div
+              class="oplata-right-right"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img src="./images/oplata.png" alt="gfyh" />
             </div>
           </div>
-          <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
-            </button>
+          <button class="aside-footer-button">
+            Узнать тарифы
+            <img src="./icons/Button. Next.svg" alt="" />
+          </button>
         </div>
       </div>
     </section>
@@ -277,77 +355,95 @@
         <div class="magnit-info">
           <p>Монетизация трафика</p>
           <div class="magnit-info-with-castle">
-            <p>Профессионалы по интернет-маркетингу с опытом работы более 10 лет составят для вас цепочки касаний и реализуют их по вашим клиентам. </p>
-            <div><img src="./icons/castle.svg" alt="">
-              <span>Наше вознаграждение будет зависеть от результатов <br> проделанной работы (Revshare).</span>
+            <p>
+              Профессионалы по интернет-маркетингу с опытом работы более 10 лет
+              составят для вас цепочки касаний и реализуют их по вашим клиентам.
+            </p>
+            <div>
+              <img src="./icons/castle.svg" alt="" />
+              <span
+                >Наше вознаграждение будет зависеть от результатов <br />
+                проделанной работы (Revshare).</span
+              >
             </div>
           </div>
-          <button class="aside-footer-button">Узнать тарифы
-              <img src="./icons/Button. Next.svg" alt="">
-            </button>
+          <button class="aside-footer-button">
+            Узнать тарифы
+            <img src="./icons/Button. Next.svg" alt="" />
+          </button>
         </div>
         <div class="magnit-img main-animation">
-          <img src="./images/МОНЕТИЗАЦИЯ иллюстрация.png" alt="illus ">
+          <img src="./images/МОНЕТИЗАЦИЯ иллюстрация.png" alt="illus " />
         </div>
       </div>
     </section>
     <section class="zayavka">
-      <p class="zayavka-info">Для подключения к системе <br> оставьте заявку:</p>
+      <p class="zayavka-info">
+        Для подключения к системе <br />
+        оставьте заявку:
+      </p>
       <div class="zayavka-container">
-        <a class="orange-button" id="orange-btn">Подключиться
-        </a> 
+        <a class="orange-button" id="orange-btn">Подключиться </a>
       </div>
     </section>
     <section class="contact" id="contact">
       <p class="contact-p">Контакты</p>
       <div class="contact-container">
         <div class="user-first">
-          <div class="tg-img"><img src="./icons/Telegram static.svg" alt=""></div>
-          <div class="tg-info"><span>@TatianaMichurina </span>
-          <p>Татьяна</p></div>
+          <div class="tg-img">
+            <img src="./icons/Telegram static.svg" alt="" />
+          </div>
+          <div class="tg-info">
+            <span>@TatianaMichurina </span>
+            <p>Татьяна</p>
+          </div>
         </div>
         <div class="user-second">
           <div class="tg-img">
-          <img src="./icons/Telegram static.svg" alt="">
+            <img src="./icons/Telegram static.svg" alt="" />
           </div>
-          <div class="tg-info"><span>@katesmsads </span>
-          <p>Екатерина</p></div>
+          <div class="tg-info">
+            <span>@katesmsads </span>
+            <p>Екатерина</p>
+          </div>
         </div>
         <div class="user-second"></div>
       </div>
     </section>
     <section class="emails">
-      <p class="emails-info">По вопросам сотрудничества </p>
-  <div class="emails-container">
-  <div class="email-box">
-    <p>Стать нашим клиентом:</p>
-    <div class="img-box">
-      <img src="./images/mailorg.png" alt="">
-      <span>sales@smsads.ru</span>
-    </div>
-  </div>
-  <div class="email-box">
-    <p>По общим вопросам:</p>
-    <div class="img-box">
-      <img src="./images/mailorg.png" alt="">
-      <span>info@smsads.ru</span>
-    </div>
-  </div>
-  <div class="email-box">
-    <p>Предложить альтернативные каналы коммуникации нам и нашим клиентам:</p>
-    <div class="img-box">
-      <img src="./images/mailorg.png" alt="">
-      <span>partner@smsads.ru</span>
-    </div>
-  </div>
-</div>
+      <p class="emails-info">По вопросам сотрудничества</p>
+      <div class="emails-container">
+        <div class="email-box">
+          <p>Стать нашим клиентом:</p>
+          <div class="img-box">
+            <img src="./images/mailorg.png" alt="" />
+            <span>sales@smsads.ru</span>
+          </div>
+        </div>
+        <div class="email-box">
+          <p>По общим вопросам:</p>
+          <div class="img-box">
+            <img src="./images/mailorg.png" alt="" />
+            <span>info@smsads.ru</span>
+          </div>
+        </div>
+        <div class="email-box">
+          <p>
+            Предложить альтернативные каналы коммуникации нам и нашим клиентам:
+          </p>
+          <div class="img-box">
+            <img src="./images/mailorg.png" alt="" />
+            <span>partner@smsads.ru</span>
+          </div>
+        </div>
+      </div>
     </section>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <div class="logo-row">
-          <img src="./images/Logo_1 desk.png" alt="">
-          <img src="./images/Logo_2.png" alt="">
-          <img src="./images/Logo_3.png" alt="">
+          <img src="./images/Logo_1 desk.png" alt="" />
+          <img src="./images/Logo_2.png" alt="" />
+          <img src="./images/Logo_3.png" alt="" />
         </div>
         <div class="footer-info">
           <div class="footer-left">
@@ -356,8 +452,10 @@
             <p>© 2022. ИП Мичурина Т. Ю. Все права на сайт защищены</p>
           </div>
           <div class="footer-right">
-            <img src="./images/Frame 54.png" alt="">
-            <span>ИП Мичурина Т. Ю. является оператором <br> персональных данных (приказ № 237 от 21.12.2020)
+            <img src="./images/Frame 54.png" alt="" />
+            <span
+              >ИП Мичурина Т. Ю. является оператором <br />
+              персональных данных (приказ № 237 от 21.12.2020)
             </span>
           </div>
         </div>
@@ -365,9 +463,8 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
-</script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
-
   </body>
 </html>
