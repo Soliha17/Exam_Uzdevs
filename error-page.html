@@ -7,63 +7,67 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="form-page.css" />
     <link rel="stylesheet" href="error-page.css" />
-    <title>Document</title>
+    <title>SMS Ads</title>
   </head>
   <body>
-    <header id="header">
-      <div class="brand">
-        <a href="index.html"
-          ><img src="./images/Logo_1 desk.png" alt="logo"
-        /></a>
-      </div>
-      <nav>
-        <ul class="font">
-          <li><a href="./index.html#rassilki">Рассылки</a></li>
-          <li><a href="/index.html#lidogeneratsiya">Лидогенерация</a></li>
-          <li><a href="/index.html#monetizatsiya">Монетизация трафика</a></li>
-          <li><a href="/index.html#contact">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header-btn-group">
-        <a class="header-btn-first font" href="./form-page.html" >
-          <img src="./icons/header-btn-1-svg.svg" alt="dollar_icon" />
-          Узнать тарифы
-        </a>
-        <a class="header-btn-second font" href="error-page.html" >
-          Войти
-          <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
-        </a>
-      </div>
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1 select"></div>
-        <div class="bar3 select"></div>
-        <div class="mobile-menu hidden">
-          <ul class="mobile-menu-list font">
+    <div class="wrapper">
+      <header id="header">
+        <div class="brand">
+          <a href="index.html"
+            ><img src="./images/Logo_1 desk.png" alt="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul class="font">
             <li><a href="./index.html#rassilki">Рассылки</a></li>
             <li><a href="/index.html#lidogeneratsiya">Лидогенерация</a></li>
             <li><a href="/index.html#monetizatsiya">Монетизация трафика</a></li>
             <li><a href="/index.html#contact">Контакты</a></li>
           </ul>
-          <div class="header-btn-group">
-            <button class="header-btn-first" type="button">
-              <img src="./icons/header_dollar_sign.svg" alt="dollor_icon" />
-              Узнать тарифы
-            </button>
-            <button class="header-btn-second" type="button">
-              Войти
-              <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
-            </button>
+        </nav>
+        <div class="header-btn-group">
+          <a class="header-btn-first font" href="./form-page.html">
+            <img src="./icons/header-btn-1-svg.svg" alt="dollar_icon" />
+            Узнать тарифы
+          </a>
+          <a class="header-btn-second font" href="error-page.html">
+            Войти
+            <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
+          </a>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1 select"></div>
+          <div class="bar3 select"></div>
+          <div class="mobile-menu hidden">
+            <ul class="mobile-menu-list font">
+              <li><a href="./index.html#rassilki">Рассылки</a></li>
+              <li><a href="/index.html#lidogeneratsiya">Лидогенерация</a></li>
+              <li>
+                <a href="/index.html#monetizatsiya">Монетизация трафика</a>
+              </li>
+              <li><a href="/index.html#contact">Контакты</a></li>
+            </ul>
+            <div class="header-btn-group">
+              <button class="header-btn-first" type="button">
+                <img src="./icons/header_dollar_sign.svg" alt="dollor_icon" />
+                Узнать тарифы
+              </button>
+              <button class="header-btn-second" type="button">
+                Войти
+                <img src="./icons/octicon_sign-in-24.svg" alt="enter_icon" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <section class="error-container">
       <div>
         <span class="error-text">ERROR</span> <span class="son">404</span>
       </div>
       <a href="./index.html" class="form-button">Вернуться на главную</a>
     </section>
-    <footer>
+    <footer class="footer">
       <div class="footer-container">
         <div class="logo-row">
           <img src="./images/Logo_1 desk.png" alt="" />

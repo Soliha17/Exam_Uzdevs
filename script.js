@@ -1,6 +1,7 @@
 // function toggleMobileMenu(menu) {
 //   menu.classList.toggle("open");
 // }
+
 // Select required elements from the DOM
 const modal = document.querySelector(".mobile-menu");
 const body = document.querySelector("body");
@@ -20,11 +21,10 @@ const toggleMobileMenu = function (menu) {
     headerBtn.style.display = "flex";
   }
 };
-window.onscroll = function () {
-  myFunction();
-};
 
-var header = document.querySelector('.wrapper');
+window.addEventListener("scroll", myFunction);
+
+var header = document.querySelector(".wrapper");
 var sticky = header.offsetTop;
 
 function myFunction() {
@@ -35,14 +35,15 @@ function myFunction() {
   }
 }
 
-
 // FOR BACK TO TOP BUTTON
 
 // Get the button
 let mybutton = document.getElementById("backToTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
